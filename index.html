@@ -38,10 +38,10 @@
       <!-- navbar section -->
       <nav class="max-w-screen-xl mx-auto px-4 md:px-16 py-5 md:py-10">
         <div
-          class="navbar bg-white lg:bg-[#F85559] rounded-full p-5 flex flex-row-reverse lg:flex-row"
+          class="navbar bg-white lg:bg-[#F85559] rounded-full p-5 flex flex-row-reverse  lg:flex-row"
         >
-          <div class="navbar-start">
-            <div class="dropdown visible lg:invisible ml-20 lg:ml-0">
+          <div class="navbar-start visible lg:invisible">
+            <div class="dropdown ml-20 lg:ml-0">
               <label tabindex="0" class="btn btn-ghost btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +68,8 @@
                 <li><a>All Fruits</a></li>
               </ul>
             </div>
-            <div class="invisible lg:visible">
-              <ul class="flex space-x-3 text-white">
+            <div class="absolute flex flex-col lg:flex-row invisible lg:visible">
+              <ul class="flex space-x-3 text-black lg:text-white">
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
@@ -77,13 +77,13 @@
               </ul>
             </div>
           </div>
-          <div class="navbar-center gap-3">
+          <div class="navbar-center -ml-48 lg:-ml-0 gap-3">
             <img src="./images/logo.png" alt="" />
             <a class="normal-case text-xl text-black lg:text-white"
               >Fruit Burst</a
             >
           </div>
-          <div class="navbar-end invisible lg:visible">
+          <div class="navbar-end invisible lg:visible ">
             <input
               type="text"
               placeholder="Search here"
@@ -92,19 +92,20 @@
             <i class="fa-solid fa-magnifying-glass absolute mr-6"></i>
           </div>
         </div>
+    
       </nav>
     </header>
     <main>
       <!-- banner section -->
       <section class="max-w-screen-xl mx-auto px-8 md:px-16 py-5 md:py-10 -mt-10 ">
-        <!-- slider-1 -->
-        <div class="carousel w-full relative">
+        <div class="carousel w-full md:w-auto relative">
+           <!-- slider-1 -->
           <div id="slide1" class="hero carousel-item relative w-full">
             <img src="./images/banner1.png" class="w-full" />
             <div class="hero-overlay bg-black bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-0 lg:mb-5 text-4xl  lg:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
+              <div>
+                <h1 class="mb-0 lg:mb-5 text-3xl  lg:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                 <p class="mb-0 lg:mb-5 text-white">
                   We supply highly quality organic products
                 </p>
@@ -123,12 +124,12 @@
             <img src="./images/banner2.png" class="w-full" />
             <div class="hero-overlay bg-black bg-opacity-70"></div>
             <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
+              <div>
                 <h1 class="mb-0 lg:mb-5 text-4xl  lg:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                 <p class="mb-0 lg:mb-5 text-white">
                   We supply highly quality organic products
                 </p>
-                <button class="btn bg-[#F85559] text-white border-none">Shop Now</button>
+                <button class="btn  bg-[#F85559] text-white border-none">Shop Now</button>
               </div>
             </div>
             <div
@@ -143,7 +144,7 @@
             <img src="./images/banner3.png" class="w-full" />
             <div class="hero-overlay bg-black bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
+              <div>
                 <h1 class=" mb-0 lg:mb-5 text-4xl lg:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                 <p class="mb-0 lg:mb-5 text-white">
                   We supply highly quality organic products
@@ -163,7 +164,7 @@
             <img src="./images/banner4.png" class="w-full" />
             <div class="hero-overlay bg-black bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
+              <div>
                 <h1 class="mb-0 lg:mb-5 text-4xl  lg:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                 <p class="mb-3 lg:mb-5  text-xs text-white">
                   We supply highly quality organic products
@@ -844,7 +845,7 @@
           </div>
         </div>
         <button
-          class="btn text-white bg-[#F85559] mt-16  lg:ml-[520px]"
+          class="btn text-white bg-[#F85559] mt-16 md:ml-[275px]  lg:ml-[520px]"
         >
           Shop All
         </button>
@@ -956,32 +957,32 @@
           Latin literature from 45 BC, making it over 2000 years old.
         </p>
         <!-- flex section -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-3">
           <!-- div 1 -->
           <div>
             <!-- content-1 -->
             <div class="flex flex-col lg:flex-row gap-5 mt-10 lg:mt-0">
-              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 lg:ml-0">
-                <i class="fa-solid fa-people-group ml-5 py-5"></i>
+              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 md:ml-72 lg:ml-0">
+                <i class="fa-solid fa-user-group ml-5 py-5"></i>
               </div>
               <div>
                 <h1 class="text-2xl font-black text-black text-center lg:text-start">Dedicated Team</h1>
-                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 lg:ml-0"></div>
-                <p class="text-base font-normal text-slate-500 w-[300px] mx-7 lg:mx-0">
+                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 md:ml-[275px] lg:ml-0"></div>
+                <p class="text-base font-normal text-slate-500 w-[300px] mx-7 md:mx-48 lg:mx-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- content-2 -->
-            <div class="flex flex-col lg:flex-row gap-5 mt-10 lg:mt-0">
-              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 lg:ml-0">
+            <div class="flex flex-col lg:flex-row gap-5 mt-10  lg:mt-0">
+              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 md:ml-72 lg:ml-0">
                 <i class="fa-regular fa-heart ml-5 py-5"></i>
               </div>
               <div>
                 <h1 class="text-2xl font-black text-black text-center lg:text-start">Fresh is Best</h1>
-                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 lg:ml-0"></div>
-                <p class="text-base font-normal text-slate-500 w-[300px] mx-7 lg:mx-0">
+                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 md:ml-[275px] lg:ml-0"></div>
+                <p class="text-base font-normal text-slate-500 w-[300px] mx-7 md:mx-48 lg:mx-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -989,13 +990,13 @@
             </div>
             <!-- content-3 -->
             <div class="flex flex-col lg:flex-row gap-5 mt-10 lg:mt-0">
-              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 lg:ml-0">
+              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 md:ml-72 lg:ml-0">
                 <i class="fa-solid fa-gift ml-5 py-5"></i>
               </div>
               <div>
                 <h1 class="text-2xl font-black text-black text-center lg:text-start">Gift Certificates</h1>
-                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 lg:ml-0"></div>
-                <p class="text-base font-normal text-slate-500 w-[300px] mx-7 lg:mx-0">
+                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 md:ml-[275px] lg:ml-0"></div>
+                <p class="text-base font-normal text-slate-500 w-[300px] mx-7 md:mx-48 lg:mx-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -1003,59 +1004,55 @@
             </div>
           </div>
           <!-- div 2 -->
-          <div class="order-first lg:order-none">
+          <div class="w-full order-first lg:order-none md:ml-24 lg:ml-auto">
             <img src="./images/whychoose1.png" alt="" />
           </div>
           <!-- div 3 -->
-          <div class="">
+          <div>
             <!-- content-1 -->
-            <div class="flex flex-col-reverse lg:flex-row text-right gap-5 mt-10 lg:mt-0">
-              <div>
-                <h1 class="text-2xl font-black text-black text-center lg:text-right">
-                  Integrated Supplier
-                </h1>
-                <div class="w-[100px] h-[1px] bg-black ml-28 lg:ml-[196px] my-3"></div>
-                <p class="text-base font-normal text-slate-500 w-[300px] ml-7 lg:ml-0">
+            <div class="flex flex-col lg:flex-row-reverse gap-2 mt-10 lg:mt-0">
+              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 md:ml-72 lg:ml-0">
+                <i class="fa-solid fa-basket-shopping px-5 lg:px-3 py-5"></i>
+              </div>
+              <div class="text-center lg:text-right">
+                <h1 class="text-2xl font-black text-black ">Integrated Supplier</h1>
+                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 md:ml-[275px] lg:ml-52"></div>
+                <p class="text-base font-normal text-slate-500 w-[300px]  mx-7 md:mx-48 lg:mx-0 lg:ml-5">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
-              </div>
-              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 lg:ml-0">
-                <i class="fa-solid fa-basket-shopping mr-5 py-5"></i>
               </div>
             </div>
             <!-- content-2 -->
-            <div class="flex  flex-col-reverse lg:flex-row text-right gap-5 mt-10 lg:mt-0">
-              <div>
-                <h1 class="text-2xl font-black text-black text-center lg:text-right">
-                  Integrated Supplier
-                </h1>
-                <div class="w-[100px] h-[1px] bg-black ml-28 lg:ml-[196px] my-3"></div>
-                <p class="text-base font-normal text-slate-500 w-[300px] ml-7 lg:ml-0">
+            <div class="flex flex-col lg:flex-row-reverse gap-2 mt-10 lg:mt-0">
+              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 md:ml-72 lg:ml-0">
+                <i class="fa-solid fa-ice-cream px-5 lg:px-3 py-5"></i>
+              </div>
+              <div class="text-center lg:text-right">
+                <h1 class="text-2xl font-black text-black ">Sustainable Practice</h1>
+                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 md:ml-[275px] lg:ml-52"></div>
+                <p class="text-base font-normal text-slate-500 w-[300px]  mx-7 md:mx-48 lg:mx-0 lg:ml-5">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
-              </div>
-              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 lg:ml-0">
-                <i class="fa-solid fa-ice-cream mr-5 py-5 pr-1 lg:pr-0"></i>
               </div>
             </div>
             <!-- content-3 -->
-            <div class="flex flex-col-reverse lg:flex-row lg:text-right gap-5 mt-10 lg:mt-0">
-              <div class="text-center">
-                <h1 class="text-2xl font-black text-black text-center lg:text-right">
-                  Integrated Supplier
-                </h1>
-                <div class="w-[100px] h-[1px] bg-black ml-28 lg:ml-[196px] my-3"></div>
-                <p class="text-base font-normal text-slate-500 w-[300px] ml-7 lg:ml-0">
+            <div class="flex flex-col lg:flex-row-reverse gap-2 mt-10 lg:mt-0">
+              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 md:ml-72 lg:ml-0">
+                <i class="fa-regular fa-thumbs-up px-5 lg:px-3 py-5"></i>
+              </div>
+              <div class="text-center lg:text-right">
+                <h1 class="text-2xl font-black text-black ">The Benefits Only</h1>
+                <div class="w-[100px] h-[1px] bg-black my-3 ml-32 md:ml-[275px] lg:ml-52"></div>
+                <p class="text-base font-normal text-slate-500 w-[300px]  mx-7 md:mx-48 lg:mx-0 lg:ml-5">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
-              <div class="w-16 h-14 rounded-full bg-slate-200 ml-36 lg:ml-0">
-                <i class="fa-regular fa-thumbs-up mr-3 py-5 px-5 lg:px-2"></i>
-              </div>
             </div>
+            </div>
+           </div>
           </div>
         </div>
       </section>
